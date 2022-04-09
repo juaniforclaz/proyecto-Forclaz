@@ -1,0 +1,25 @@
+.logo-navbar {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.card {
+  width: 18rem;
+}
+
+.cardSelect {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-bottom: 15px solid #4bbf73;
+  transition: all .3s;
+}
+
+.cardNoSelect {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.pointer {
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
