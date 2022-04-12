@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="../styles/styles.css">
     <link rel="icon" href="../img/kolmas-logo-blanco.png" type="image/x-icon">
-    <title>Kolmas | Catalogo</title>
+    <title>Kolmas | Administrador</title>
 </head>
 
 <body>
@@ -44,25 +44,27 @@
                     <div class="col">
                         <div class="input-group mb-3">
                             <span class="input-group-text">Producto</span>
-                            <input id="modelo" type="text" class="form-control">
+                            <input id="modelo" type="text" class="form-control" required>
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">Marca</span>
-                            <input id="marca" type="text" class="form-control">
+                            <input id="marca" type="text" class="form-control" required>
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">Color</span>
-                            <input id="color" type="text" class="form-control">
+                            <input id="color" type="text" class="form-control" required>
                         </div>
                         <div class="input-group mb-3">
-                            <span class="input-group-text">Sexo</span>
-                            <input id="sexo" type="text" class="form-control">
+                            <span class="input-group-text">Genero</span>
+                            <input id="genero" type="text" class="form-control" required>
                         </div>
                         <div class="input-group mb-3">
                             <span class="input-group-text">Precio</span>
-                            <input id="precio" type="text" class="form-control">
+                            <input id="precio" type="number" class="form-control" required>
                         </div>
                         <button id="boton" class="btn btn-success" type="reset" onclick="capturar()">Agregar</button>
+                        <button id="boton" class="btn btn-info" type="reset" onclick="mostrarGenero()">Mostrar genero</button>
+                        <button id="boton" class="btn btn-warning" type="reset" onclick="mostrarProductosAnteriores()">Mostrar productos cargados anteriormente</button>
                     </div>
                 </div>
 
