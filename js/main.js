@@ -1,3 +1,5 @@
+document.getElementById("logearse").onclick = logearse;
+
 function logearse() {
     let log = confirm("¿Desea ingresar?");
     if (log == true) {
@@ -20,8 +22,3 @@ function login() {
     }
 }
 
-// Formulario de contacto
-
-function mensajeEnviado() {
-    alert("Su mensaje ha sido enviado correctamente");
-}
