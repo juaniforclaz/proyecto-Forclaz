@@ -73,7 +73,7 @@ function agregar() {
     indice++;
     baseDatos.push(nuevoProducto);
     document.getElementById("tabla").innerHTML += '<tbody><tr><th scope="row">' + indice + '</th><td>' + nuevoProducto.modelo + '<td>' + nuevoProducto.marca + '</td>' + '<td>' + nuevoProducto.color + '</td>' + '<td>' + nuevoProducto.genero + '</td>' + '<td>' + nuevoProducto.precio + '</td>' + '</td></tr></tbody>';
-    alert("Producto añadido correctamente")
+    alert("Producto añadido correctamente");
 }
 
 // Filter y Map
