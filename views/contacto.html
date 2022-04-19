@@ -14,17 +14,18 @@
 <body>
   <!-- Nav bar -->
 
-  <div id="header">
-  </div>
+  <div id="header"></div>
+
+  <div id="entradaUsuario"></div>
 
   <!-- Contacto -->
 
-  <form action="">
+  <form action="" id="form">
     <div class="container-fluid bg-primary">
       <div class="container mt-5 mb-5 p-5 text-white">
         <div class="input-group mb-3">
           <span class="input-group-text">Nombre y Apellido</span>
-          <input type="text" class="form-control" />
+          <input type="text" class="form-control" id="nombreApellido"/>
         </div>
         <div class="input-group mb-3">
           <span class="input-group-text" id="basic-addon1">@</span>
@@ -35,6 +36,16 @@
           <span class="input-group-text">Mensaje</span>
           <textarea class="form-control" aria-label="With textarea"></textarea>
         </div>
+        <div class="input-group mb-3">
+          <span class="input-group-text">Selecciona tu pais</span>
+          <select name="" id="paises" class="form-control" onchange="mostrarPais()">
+            <option value=""></option>
+            <option value="Argentina">Argentina</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Chile">Chile</option>
+          </select>
+        </div>
+        <p id="paisSeleccionado" class="input-group mb-3 text-white"></p>
         <button type="submit" class="btn btn-light" id="btnEnviar">
           Enviar
         </button>
@@ -51,9 +62,7 @@
     </div>
   </div>
 
-  <div id="footer">
-
-  </div>
+  <div id="footer"></div>
 
   <!-- Script -->
 

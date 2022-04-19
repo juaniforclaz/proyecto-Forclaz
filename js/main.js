@@ -1,5 +1,5 @@
 
-document.getElementById("logearse").onclick = logearse;
+document.getElementById("logearse").addEventListener('click', logearse);
 
 function logearse() {
     let log = confirm("¿Desea ingresar?");
