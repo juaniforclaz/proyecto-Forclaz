@@ -18,128 +18,116 @@
     <div id="header"></div>
 
     <div id="entradaUsuario"></div>
+
+    <!-- Carrito -->
+
+    <i class="fa-solid fa-cart-shopping text-white fa-2x carrito btn btn-success p-3 rounded" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><span class="fs-4 m-2"
+            id="contadorCarrito">0</span></i>
+
     <!-- Catalogo -->
 
-    <div class="container-width bg-primary p-5 mb-5 mt-5">
+    <div class="container-fluid bg-primary p-5 mb-5 mt-5">
+
         <div class="container">
-            <h1 class="text-center text-white">Catálogo</h1>
-            <div class="row mb-5 mt-5">
-                <div class="col">
-                    <div class="card mx-auto mb-5">
-                        <img src="../img/prod.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Officiis,
-                                quae! Cumque architecto est quis. Suscipit?</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
-                            <a href="#" class="btn btn-success">Añadir al carrito</a>
-                        </div>
-                    </div>
+
+            <h2 class="text-center text-white">Catalogo</h2>
+
+            <!-- Select -->
+
+            <div class="row">
+                <div class="col-12 input-group mt-3 mb-3">
+                    <select class="form-select" id="seleccTalles" aria-label="Example select with button addon">
+                        <option selected value="all">Filtra por talle</option>
+                        <option value="S">Small</option>
+                        <option value="M">Medium</option>
+                        <option value="L">Large</option>
+                        <option value="XL">X-Large</option>
+                        <option value="XXL">XX-Large</option>
+                    </select>
+                    <button class="btn btn-outline-secondary" type="button">Button</button>
                 </div>
-                <div class="col">
-                    <div class="card mx-auto mb-5">
-                        <img src="../img/prod.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Officiis,
-                                quae! Cumque architecto est quis. Suscipit?</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
-                            <a href="#" class="btn btn-success">Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mx-auto mb-5">
-                        <img src="../img/prod.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Officiis,
-                                quae! Cumque architecto est quis. Suscipit?</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
-                            <a href="#" class="btn btn-success">Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mx-auto mb-5">
-                        <img src="../img/prod.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Officiis,
-                                quae! Cumque architecto est quis. Suscipit?</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
-                            <a href="#" class="btn btn-success">Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mx-auto mb-5">
-                        <img src="../img/prod.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Officiis,
-                                quae! Cumque architecto est quis. Suscipit?</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
-                            <a href="#" class="btn btn-success">Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mx-auto mb-5">
-                        <img src="../img/prod.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Officiis,
-                                quae! Cumque architecto est quis. Suscipit?</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
-                            <a href="#" class="btn btn-success">Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mx-auto mb-5">
-                        <img src="../img/prod.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Officiis,
-                                quae! Cumque architecto est quis. Suscipit?</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
-                            <a href="#" class="btn btn-success">Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mx-auto mb-5">
-                        <img src="../img/prod.jpeg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Producto</h5>
-                            <p class="card-text">Descripcion lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Officiis,
-                                quae! Cumque architecto est quis. Suscipit?</p>
-                            <a href="#" class="btn btn-primary">Ver más</a>
-                            <a href="#" class="btn btn-success">Añadir al carrito</a>
-                        </div>
-                    </div>
-                </div>
-                <button id="btnTop" class="btn btn-success w-25 mx-auto">Top</button>
             </div>
+
+            <!-- Productos -->
+
+            <div class="row mt-5" id="contenedorProductos"></div>
+
+            <!-- Top -->
+
+            <div class="row text-center">
+                <div class="col mx-auto">
+                    <i class="fa-solid fa-arrow-up btn btn-success" id="btnTop"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Modal -->
+
+    <!--  
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Launch static backdrop modal</button>
+
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="display-5 fw-bolder">Shop item template</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0"
+                            src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
+                    <span class="text-decoration-line-through">$45.00</span>
+                    <span>$40.00</span>
+                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium at dolorem
+                        quidem modi. Nam sequi consequatur obcaecati excepturi alias magni, accusamus eius blanditiis
+                        delectus ipsam minima ea iste laborum vero?</p>
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control text-center me-3 w-25" id="inputQuantity" type="number" />
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+    -->
+
+    <!-- Offcanvas Carrito -->
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h3 id="offcanvasRightLabel">Productos Seleccionados</h3>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" id="contenedorCarrito">
+            <!-- <div class="border border-2 shadow-sm p-3 rounded mb-3 producto">
+                <p>Nombre</p>
+                <p>Precio: </p>
+                <i class="fa-solid fa-delete-left rounded fs-5 pointer bg-danger p-2 text-white"></i>
+            </div> -->
+            <p class="text-primary" id="precioTotal"></p>
         </div>
     </div>
 
-
-    <div id="catalogo"></div>
+    <!-- Footer -->
 
     <div id="footer"></div>
 
     <!-- Script -->
 
+    <script src="/js/stock.js"></script>
     <script src="/js/catalogo.js"></script>
     <script src="https://kit.fontawesome.com/633467dd7a.js" crossorigin="anonymous"></script>
     <script src="/js/templates.js"></script>

@@ -1,30 +1,39 @@
 
-// Funcion Login y Loguearse para preguntar si desea ingresar
+// // Funcion Login y Loguearse para preguntar si desea ingresar
 
-function logearse() {
-    let log = confirm("¿Desea ingresar?");
-    if (log == true) {
-        login();
-    } else {
-        console.log("NoLog");
-        location.href = "../index.html";
-    }
-}
+// function logearse() {
+//     let log = confirm("¿Desea ingresar?");
+//     if (log == true) {
+//         login();
+//     } else {
+//         console.log("NoLog");
+//         location.href = "../index.html";
+//     }
+// }
+
+let confirmBtn = document.getElementById('confirmBtn');
+confirmBtn.addEventListener('click', login);
+
 
 function login() {
-    let user = prompt("Ingrese su nombre de usuario");
-    let contraseña = prompt("Ingrese su contraseña");
+    let user = document.getElementById('user').value;
+    let password = document.getElementById('password').value;
+    // let admi = document.getElementById('administrador');
+    // let formLog = document.getElementById('formLog');
 
-    if (user != "admin" || contraseña != "3578") {
-        alert("Por favor, ingrese sus datos")
-        logearse();
-    } else {
+    if (user == "admin" || password == "3578") {
         alert("Bienvenido al administrador");
+        // formLog.classList.add('d-none');
+        // admi.classList.remove('d-none');
         let nombreApellido = prompt("Ingrese su nombre y apellido");
         let bienvenida = "Bienvenido/a al administrador " + nombreApellido;
         document.getElementById("entradaUsuario").innerHTML = bienvenida;
+        ;
+    } else {
+        alert("Por favor, ingrese sus datos")
     }
 }
+
 
 // Funcion de creacion de objeto
 

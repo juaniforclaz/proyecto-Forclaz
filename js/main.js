@@ -1,25 +1,24 @@
 
-document.getElementById("logearse").addEventListener('click', logearse);
+// Boton Logearse
+
+document.getElementById('logearse').addEventListener('click', logearse);
+
+// Desea ingresar?
 
 function logearse() {
-    let log = confirm("¿Desea ingresar?");
-    if (log == true) {
-        login();
-    } else {
-        console.log("NoLog");
-    }
+    const log = (confirm('¿Desea ingresar?')) ? true : false;
+
+    log ? login() : console.log('El usuario no se logeó')
 }
 
-function login() {
-    let nombre = prompt("Nombre");
-    let apellido = prompt("Apellido");
+// Ingresar Nombre y Apellido
 
-    if (nombre != "" && apellido != "" && nombre != " " && apellido != " " && nombre != null && apellido != null) {
-        let bienvenida = "Bienvenido/a " + nombre + " " + apellido;
-        document.getElementById("entradaUsuario").innerHTML = '<p id="entradaUsuario" class="bg-success p-3 sticky">' + bienvenida + '</p>';
-    } else {
-        alert("Por favor, ingrese sus datos");
-        logearse();
-    }
+function login() {
+    let nombre = prompt('Nombre');
+    let apellido = prompt('Apellido');
+    let bienvenida = 'Bienvenido/a ' + nombre + " " + apellido;
+    const logeado = (nombre, apellido != "") ? true : false
+
+    logeado ? document.getElementById("entradaUsuario").innerHTML = '<p id="entradaUsuario" class="bg-success p-3 sticky">' + bienvenida + '</p>' : alert("Por favor, ingrese sus datos") & logearse();
 }
 

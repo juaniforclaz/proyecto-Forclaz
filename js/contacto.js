@@ -11,9 +11,3 @@ function mostrarPais() {
     document.getElementById("paisSeleccionado").innerHTML = "El pais seleccionado es " + pais;
 
 }
-
-document.getElementById("form").addEventListener("focusout", confirmarDatos);
-
-function confirmarDatos() {
-    alert("Ha abandadonado el formulario, no desea contactarnos?")
-}

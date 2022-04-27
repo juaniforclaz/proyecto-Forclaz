@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .logo-navbar {
     width: 3.5rem;
     height: 3.5rem;
@@ -19,4 +23,15 @@
 
 .pointer {
     cursor: pointer;
+}
+
+.administrador {
+    display: none;
+}
+
+.carrito {
+    top: 90vh;
+    position: fixed;
+    right: 2rem;
+    z-index: 1;
 }

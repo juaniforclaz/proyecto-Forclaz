@@ -19,39 +19,41 @@
   <div id="entradaUsuario"></div>
 
   <!-- Contacto -->
-
-  <form action="" id="form">
-    <div class="container-fluid bg-primary">
-      <div class="container mt-5 mb-5 p-5 text-white">
-        <div class="input-group mb-3">
-          <span class="input-group-text">Nombre y Apellido</span>
-          <input type="text" class="form-control" id="nombreApellido"/>
+  
+  <div id="form">
+    <form action="">
+      <div class="container-fluid bg-primary">
+        <div class="container mt-5 mb-5 p-5 text-white">
+          <div class="input-group mb-3">
+            <span class="input-group-text">Nombre y Apellido</span>
+            <input type="text" class="form-control" id="nombreApellido" />
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1">@</span>
+            <input type="email" class="form-control" placeholder="Correo Electrónico" aria-label="Correo"
+              aria-describedby="basic-addon1" />
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Mensaje</span>
+            <textarea class="form-control" aria-label="With textarea"></textarea>
+          </div>
+          <div class="input-group mb-3">
+            <span class="input-group-text">Selecciona tu pais</span>
+            <select name="" id="paises" class="form-control" onchange="mostrarPais()">
+              <option value=""></option>
+              <option value="Argentina">Argentina</option>
+              <option value="Uruguay">Uruguay</option>
+              <option value="Chile">Chile</option>
+            </select>
+          </div>
+          <p id="paisSeleccionado" class="input-group mb-3 text-white"></p>
+          <button type="submit" class="btn btn-light" id="btnEnviar">
+            Enviar
+          </button>
         </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="basic-addon1">@</span>
-          <input type="email" class="form-control" placeholder="Correo Electrónico" aria-label="Correo"
-            aria-describedby="basic-addon1" />
-        </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text">Mensaje</span>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
-        </div>
-        <div class="input-group mb-3">
-          <span class="input-group-text">Selecciona tu pais</span>
-          <select name="" id="paises" class="form-control" onchange="mostrarPais()">
-            <option value=""></option>
-            <option value="Argentina">Argentina</option>
-            <option value="Uruguay">Uruguay</option>
-            <option value="Chile">Chile</option>
-          </select>
-        </div>
-        <p id="paisSeleccionado" class="input-group mb-3 text-white"></p>
-        <button type="submit" class="btn btn-light" id="btnEnviar">
-          Enviar
-        </button>
       </div>
-    </div>
-  </form>
+    </form>
+  </div>
 
   <div class="container-fluid bg-primary mb-5">
     <div class="container text-center p-5">
@@ -61,6 +63,8 @@
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </div>
+
+  <!-- Footer -->
 
   <div id="footer"></div>
 

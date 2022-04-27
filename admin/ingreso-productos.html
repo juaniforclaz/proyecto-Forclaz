@@ -15,80 +15,102 @@
 
     <!-- Nav bar -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../img/kolmas-logo-blanco.png" alt="kolmas accesorios"
-                    class="logo-navbar"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <div class="nav-link active" id="entradaUsuario">fgffg</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <form action="form">
-        <div class="container-fluid bg-primary">
-            <div class="container mt-5 bg-primary p-5">
-                <div class="row">
-                    <div class="col">
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">Producto</span>
-                            <input id="modelo" type="text" class="form-control" required>
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">Marca</span>
-                            <input id="marca" type="text" class="form-control" required>
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">Color</span>
-                            <input id="color" type="text" class="form-control" required>
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">Genero</span>
-                            <input id="genero" type="text" class="form-control" required>
-                        </div>
-                        <div class="input-group mb-3">
-                            <span class="input-group-text">Precio</span>
-                            <input id="precio" type="number" class="form-control" required>
-                        </div>
-                        <button id="boton" class="btn btn-success" type="reset" onclick="capturar()">Agregar</button>
-                        <button id="boton" class="btn btn-info" type="reset" onclick="mostrarGenero()">Mostrar genero</button>
-                        <button id="boton" class="btn btn-warning" type="reset" onclick="mostrarProductosAnteriores()">Mostrar productos cargados anteriormente</button>
-                    </div>
+    <div id="formLog" class="container-fluid bg-primary vh-100 d-none">
+        <form action="">
+            <div class="container p-5 text-white">
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Usuario</span>
+                    <input type="text" class="form-control" id="user" />
                 </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Contraseña</span>
+                    <input type="password" class="form-control" id="password" aria-label="Contraseña"
+                        aria-describedby="basic-addon1" />
+                </div>
+                <button type="submit" id="confirmBtn">Ingresar</button>
+            </div>
+        </form>
+    </div>
 
-                <div class="row mt-5 table-responsive">
-                    <div class="col">
-                        <table class="table table-m table-light table-hover table-bordered" id="tabla">
-                            <thead class="table-dark caption">
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Modelo</th>
-                                    <th scope="col">Marca</th>
-                                    <th scope="col">Color</th>
-                                    <th scope="col">Sexo</th>
-                                    <th scope="col">Precio</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            </tbody>
-                        </table>
-                    </div>
+    <section id="administrador">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../img/kolmas-logo-blanco.png" alt="kolmas accesorios"
+                        class="logo-navbar"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link active" id="entradaUsuario">fgffg</div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </form>
+        </nav>
+
+        <form action="form">
+            <div class="container-fluid bg-primary">
+                <div class="container mt-5 bg-primary p-5">
+                    <div class="row">
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Producto</span>
+                                <input id="modelo" type="text" class="form-control" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Marca</span>
+                                <input id="marca" type="text" class="form-control" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Color</span>
+                                <input id="color" type="text" class="form-control" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Genero</span>
+                                <input id="genero" type="text" class="form-control" required>
+                            </div>
+                            <div class="input-group mb-3">
+                                <span class="input-group-text">Precio</span>
+                                <input id="precio" type="number" class="form-control" required>
+                            </div>
+                            <button id="boton" class="btn btn-success" type="reset"
+                                onclick="capturar()">Agregar</button>
+                            <button id="boton" class="btn btn-info" type="reset" onclick="mostrarGenero()">Mostrar
+                                genero</button>
+                            <button id="boton" class="btn btn-warning" type="reset"
+                                onclick="mostrarProductosAnteriores()">Mostrar productos cargados anteriormente</button>
+                        </div>
+                    </div>
+
+                    <div class="row mt-5 table-responsive">
+                        <div class="col">
+                            <table class="table table-m table-light table-hover table-bordered" id="tabla">
+                                <thead class="table-dark caption">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Modelo</th>
+                                        <th scope="col">Marca</th>
+                                        <th scope="col">Color</th>
+                                        <th scope="col">Sexo</th>
+                                        <th scope="col">Precio</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
 
     <!-- Script -->
 
