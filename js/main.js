@@ -23,3 +23,9 @@ function login() {
     
 }
 
+const DateTime = luxon.DateTime;
+const now = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
+
+const dt = DateTime.local(2017, 5, 15, 8, 30);
+console.log(dt);
+console.log(now);
