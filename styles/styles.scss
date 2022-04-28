@@ -35,3 +35,31 @@ body {
     right: 2rem;
     z-index: 1;
 }
+
+a {
+    text-decoration: none;
+}
+
+.card-title {
+    padding: 3rem;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+    transition: all .5s;
+}
+
+.categoria {
+    transition: all .5s;
+    color: white;
+}
+
+.categoria:hover {
+    color:rgb(0, 0, 0);
+
+    .card-title {
+        padding: 3rem;
+        color: black;
+        background-color: rgba(255, 255, 255, 0);
+        color: rgb(0, 0, 0);
+    }
+
+}

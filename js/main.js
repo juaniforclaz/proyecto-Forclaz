@@ -17,8 +17,9 @@ function login() {
     let nombre = prompt('Nombre');
     let apellido = prompt('Apellido');
     let bienvenida = 'Bienvenido/a ' + nombre + " " + apellido;
-    const logeado = (nombre, apellido != "") ? true : false
+    const logeado = (nombre, apellido != "") ? true : false;
 
     logeado ? document.getElementById("entradaUsuario").innerHTML = '<p id="entradaUsuario" class="bg-success p-3 sticky">' + bienvenida + '</p>' : alert("Por favor, ingrese sus datos") & logearse();
+    
 }
 
