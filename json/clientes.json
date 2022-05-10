@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "nombre": "Fan",
+        "apellido": "Brannon",
+        "email": "fbrannon0@buzzfeed.com",
+        "genero": "Female"
+    },
+    {
+        "id": 2,
+        "nombre": "Blanch",
+        "apellido": "Gurnee",
+        "email": "bgurnee1@domainmarket.com",
+        "genero": "Female"
+    },
+    {
+        "id": 3,
+        "nombre": "Nelson",
+        "apellido": "Passfield",
+        "email": "npassfield2@cocolog-nifty.com",
+        "genero": "Male"
+    },
+    {
+        "id": 4,
+        "nombre": "Sky",
+        "apellido": "Pattinson",
+        "email": "spattinson3@smugmug.com",
+        "genero": "Male"
+    }
+]

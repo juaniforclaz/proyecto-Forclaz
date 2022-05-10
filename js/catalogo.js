@@ -95,7 +95,7 @@ function mostrarCarrito(productoAgregar) {
     let div = document.createElement('div');
     div.className = 'productoEnCarrito shadow-sm p-3 rounded mb-3 border border-2'
     div.innerHTML = `
-    <h5 class="mb-0">$${productoAgregar.nombre}</h5>
+    <h5 class="mb-0">${productoAgregar.nombre}</h5>
     <p class="mb-0">${productoAgregar.talle}</p>
     <p class="mb-1" id="cant${productoAgregar.id}">Cantidad:${productoAgregar.cantidad}</p>
     <p class="mb-1">$${productoAgregar.precio}</p>
@@ -117,11 +117,9 @@ function mostrarCarrito(productoAgregar) {
             document.getElementById(`cant${productoAgregar.id}`).innerHTML = ` <p class="mb-1" id="cant${productoAgregar.id}">Cantidad:${productoAgregar.cantidad}</p> `
             actualizarCarrito();
             localStorage.setItem('carrito', JSON.stringify(carritoDeCompras))
+
         }
-
     })
-
-
 }
 
 function actualizarCarrito() {

@@ -1,15 +1,27 @@
 // Formulario de contacto
 
-document.getElementById("btnEnviar").addEventListener("click", () =>
-    Swal.fire({
-        title: 'Felicitaciones',
-        text: 'El mensaje ha sido enviado correctamente',
-        icon: 'success',
-        confirmButtonText: 'Aceptar'
-    })
-);
+const $form = document.querySelector('#form')
 
-function mostrarPais() {
-    let pais = document.getElementById("paises").value;
-    document.getElementById("paisSeleccionado").innerHTML = "El pais seleccionado es " + pais;
+$form.addEventListener('submit', handleSubmit)
+
+async function handleSubmit(event) {
+    event.preventDefault()
+    const form = new FormData(this)
+    const response = await fetch(this.action, {
+        method: this.method,
+        body: form,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    if (response.ok) {
+        this.reset()
+        Swal.fire({
+            title: 'Felicitaciones',
+            text: 'El mensaje ha sido enviado correctamente',
+            icon: 'success',
+            confirmButtonText: 'Aceptar'
+        })
+    }
 }
+
