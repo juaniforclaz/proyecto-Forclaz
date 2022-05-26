@@ -1,0 +1,162 @@
+[
+    {
+        "id":1,
+        "nombre": "Morral Negro Hombre",
+        "tipo": "Morral",
+        "precio": 1200,
+        "talle": "S",
+        "img": "/img/morral.png"
+    },
+    {
+        "id":2,
+        "nombre": "Morral Negro Hombre",
+        "tipo": "Morral",
+        "precio": 1200,
+        "talle": "M",
+        "img": "/img/morral.png"
+    },
+    {
+        "id":3,
+        "nombre": "Morral Negro Hombre",
+        "tipo": "Morral",
+        "precio": 1200,
+        "talle": "L",
+        "img": "/img/morral.png"
+    },
+    {
+        "id":4,
+        "nombre": "Morral Negro Hombre",
+        "tipo": "Morral",
+        "precio": 1200,
+        "talle": "XL",
+        "img": "/img/morral.png"
+    },
+    {
+        "id":5,
+        "nombre": "Morral Negro Hombre",
+        "tipo": "Morral",
+        "precio": 1500,
+        "talle": "XXL",
+        "img": "/img/morral.png"
+    },
+    {
+        "id": 6,
+        "nombre": "Riñonera Negra Unisex",
+        "tipo": "Riñonera",
+        "precio": 1100,
+        "talle": "S",
+        "img": "/img/riñonera.png"
+    },
+    {
+        "id": 7,
+        "nombre": "Riñonera Negra Unisex",
+        "tipo": "Riñonera",
+        "precio": 1100,
+        "talle": "M",
+        "img": "/img/riñonera.png"
+    },
+    {
+        "id": 8,
+        "nombre": "Riñonera Negra Unisex",
+        "tipo": "Riñonera",
+        "precio": 1100,
+        "talle": "L",
+        "img": "/img/riñonera.png"
+    },
+    {
+        "id": 9,
+        "nombre": "Riñonera Negra Unisex",
+        "tipo": "Riñonera",
+        "precio": 1100,
+        "talle": "XL",
+        "img": "/img/riñonera.png"
+    },
+    {
+        "id": 10,
+        "nombre": "Bolso Negro Unisex",
+        "tipo": "Bolso",
+        "precio": 1500,
+        "talle": "S",
+        "img": "/img/bolso.png"
+    },
+    {
+        "id": 11,
+        "nombre": "Bolso Negro Unisex",
+        "tipo": "Bolso",
+        "precio": 1500,
+        "talle": "M",
+        "img": "/img/bolso.png"
+    },
+    {
+        "id": 12,
+        "nombre": "Bolso Negro Unisex",
+        "tipo": "Bolso",
+        "precio": 1500,
+        "talle": "L",
+        "img": "/img/bolso.png"
+    },
+    {
+        "id": 13,
+        "nombre": "Bolso Negro Unisex",
+        "tipo": "Bolso",
+        "precio": 1500,
+        "talle": "XL",
+        "img": "/img/bolso.png"
+    },
+    {
+        "id": 14,
+        "nombre": "Bandolera verde unisex",
+        "tipo": "Bandolera",
+        "precio": 1300,
+        "talle": "S",
+        "img": "/img/bandolera-verde.png"
+    },
+    {
+        "id": 15,
+        "nombre": "Bandolera verde unisex",
+        "tipo": "Bandolera",
+        "precio": 1300,
+        "talle": "M",
+        "img": "/img/bandolera-verde.png"
+    },
+    {
+        "id": 16,
+        "nombre": "Bandolera verde unisex",
+        "tipo": "Bandolera",
+        "precio": 1300,
+        "talle": "L",
+        "img": "/img/bandolera-verde.png"
+    },
+    {
+        "id": 17,
+        "nombre": "Bandolera verde unisex",
+        "tipo": "Bandolera",
+        "precio": 1300,
+        "talle": "XL",
+        "img": "/img/bandolera-verde.png"
+    },
+    {
+        "id": 18,
+        "nombre": "Billetera azul mujer",
+        "tipo": "Billetera",
+        "precio": 2000,
+        "talle": "M",
+        "img": "/img/billetera.png"
+    },
+    {
+        "id": 19,
+        "nombre": "Billetera azul mujer",
+        "tipo": "Billetera",
+        "precio": 2000,
+        "talle": "L",
+        "img": "/img/billetera.png"
+    },
+    {
+        "id": 20,
+        "nombre": "Billetera azul mujer",
+        "tipo": "Billetera",
+        "precio": 2000,
+        "talle": "XL",
+        "img": "/img/billetera.png"
+    }
+]

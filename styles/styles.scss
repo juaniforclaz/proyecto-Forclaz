@@ -12,16 +12,6 @@ body {
     max-width: 540px;
 }
 
-.cardSelect {
-    transition: all .3s;
-    border-bottom: 15px solid #4bbf73;
-    transition: all .3s;
-}
-
-.cardNoSelect {
-    transition: all .3s;
-}
-
 .pointer {
     cursor: pointer;
 }
@@ -63,4 +53,48 @@ a {
         color: rgb(0, 0, 0);
     }
 
+}
+
+.precio {
+    display: flex;
+}
+
+.containerModal {
+    background-color: #000000;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 11;
+
+}
+
+.modalCaptura {
+    position: relative;
+}
+
+.completar {
+    background-color: #4bbf73;
+}
+
+.img-carousel {
+    height: 80vh;
+    object-fit: cover;
+}
+
+.oferta {
+    z-index: 11;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    animation: opacity 2s;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
